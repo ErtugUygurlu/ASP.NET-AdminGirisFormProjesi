@@ -11,6 +11,10 @@ namespace AdminGirisProjesi
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            DataSet1TableAdapters.TblAdminTableAdapter dt = new DataSet1TableAdapters.TblAdminTableAdapter();
+            Repeater1.DataSource = dt.AdminListesi();
+            Repeater1.DataBind();
+
 
         }
     }
