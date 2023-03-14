@@ -90,8 +90,13 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="SilmeSayfasi.aspx" />
+    <Content Include="VeriGuncelle.aspx" />
     <Content Include="Veriler.aspx" />
     <Content Include="Web.config" />
+    <Content Include="web2\css\style.css" />
+    <Content Include="web2\images\bg.jpg" />
+    <Content Include="web2\index.html" />
+    <Content Include="web2\w3layouts-License.txt" />
     <Content Include="WebForm1.aspx" />
     <Content Include="web\css\style.css" />
     <Content Include="web\images\b4.jpg" />
@@ -111,6 +116,13 @@
     </Compile>
     <Compile Include="SilmeSayfasi.aspx.designer.cs">
       <DependentUpon>SilmeSayfasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VeriGuncelle.aspx.cs">
+      <DependentUpon>VeriGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VeriGuncelle.aspx.designer.cs">
+      <DependentUpon>VeriGuncelle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Veriler.aspx.cs">
       <DependentUpon>Veriler.aspx</DependentUpon>

@@ -63,7 +63,7 @@
                             <td>
                                 <asp:HyperLink NavigateUrl='<%#"SilmeSayfasi.Aspx?ID="+Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink></td>
                             <td>
-                                <asp:HyperLink NavigateUrl='<%#"GuncellemeSayfasi.Aspx?ID="+Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink></td>
+                                <asp:HyperLink NavigateUrl='<%#"VeriGuncelle.Aspx?ID="+Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink></td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>
