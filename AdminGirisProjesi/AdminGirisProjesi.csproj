@@ -89,6 +89,7 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="SilmeSayfasi.aspx" />
     <Content Include="Veriler.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -104,6 +105,13 @@
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SilmeSayfasi.aspx.cs">
+      <DependentUpon>SilmeSayfasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SilmeSayfasi.aspx.designer.cs">
+      <DependentUpon>SilmeSayfasi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Veriler.aspx.cs">
       <DependentUpon>Veriler.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

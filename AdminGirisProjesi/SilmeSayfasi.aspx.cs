@@ -7,13 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace AdminGirisProjesi
 {
-    public partial class Veriler : System.Web.UI.Page
+    public partial class SilmeSayfasi : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            int x = Convert.ToInt32(Request.QueryString["ID"].ToString());
             DataSet1TableAdapters.TblAdminTableAdapter dt = new DataSet1TableAdapters.TblAdminTableAdapter();
-            Repeater1.DataSource = dt.AdminListesi();
-            Repeater1.DataBind();
+            dt.AdminSil(x);
+            Response.Redirect("Veriler.Aspx");
         }
     }
 }

@@ -60,8 +60,10 @@
                             <th><%#Eval("ID") %></th>
                             <td><%#Eval("Kullanici") %></td>
                             <td><%#Eval("Sifre") %></td>
-                            <td><asp:Button ID="Button2" runat="server" Text="Sil" CssClass="btn btn-danger" /></td>
-                            <td><asp:Button ID="Button1" runat="server" Text="Güncelle" CssClass="btn btn-success" /></td>
+                            <td>
+                                <asp:HyperLink NavigateUrl='<%#"SilmeSayfasi.Aspx?ID="+Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink></td>
+                            <td>
+                                <asp:HyperLink NavigateUrl='<%#"GuncellemeSayfasi.Aspx?ID="+Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink></td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>
